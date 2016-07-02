@@ -98,10 +98,10 @@ function assessBoard() {
         gameLog.textContent = ["O","X"][(1 + game.control) / 2] + " WINS!";
     } else if (tieGame()) {
         game.dead = true;
-        gameLog.textContent = "Tie game.";
+        gameLog.textContent = "TIE GAME";
     } else {
         game.control = - game.control;
-        gameLog.textContent = ["O","X"][(1 + game.control) / 2] + "'s turn."
+        gameLog.textContent = ["O","X"][(1 + game.control) / 2] + "'s turn"
     }
 }
 
